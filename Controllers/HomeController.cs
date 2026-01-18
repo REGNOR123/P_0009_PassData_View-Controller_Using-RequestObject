@@ -17,6 +17,14 @@ namespace P_0009_PassData_View_Controller_Using_RequestObject.Controllers
         {
             return View();
         }
+        public IActionResult RegistrationForm()
+        {
+            ViewBag.username = Request.Form["username"];
+            ViewBag.email = Request.Form["email"];
+            ViewBag.gender = Request.Form["gender"];
+            ViewBag.age = Request.Form["age"];
+            return View();
+        }
 
         public IActionResult Privacy()
         {

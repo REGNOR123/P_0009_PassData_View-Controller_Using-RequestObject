@@ -4,5 +4,21 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form name="registrationform" action="/Home/RegistrationForm" method="post">
+        <label>Username</label> 
+        <input name="username" type="text"/>
+
+        <label>Email</label>
+        <input name="email" type="email"/>
+
+        <label>Gender</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Trans">Transgender</option>
+        </select>
+        <label>Age</label>
+        <input name="age" type="number"/>
+        <button type="submit" class="btn btn-primary">Submit</button>
+   </form>
 </div>
